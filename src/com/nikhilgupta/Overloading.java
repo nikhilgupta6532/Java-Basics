@@ -22,6 +22,8 @@ public class Overloading {
 		}
 		
 		calcFeetAndInchesToCentimeters(157);
+		
+		area(4,5.8f);
 	}
 	// here we have tow methods with same name having different signatures
 	// this is called method overloading.
@@ -63,6 +65,21 @@ public class Overloading {
 		System.out.println(inches+" inches is equal to "+feet+" feet and "+remainingInches+" inches");
 		//recursive call to a function
 		return calcFeetAndInchesToCentimeters(feet,remainingInches); 
+	}
+	
+	//ambuigity
+	
+	public static void area(double x, int y ) {
+		System.out.println("Value of x is "+ x);
+		System.out.println("Value of y is "+ y);
+		System.out.println("Area1");
+		
+	}
+	
+	public static void area(int height,double radius) {
+		System.out.println("Value of height is "+ height);
+		System.out.println("Value of radius is "+ radius);
+		System.out.println("Area2");
 	}
 
 }
