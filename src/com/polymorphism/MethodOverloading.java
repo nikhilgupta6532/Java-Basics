@@ -68,7 +68,7 @@ public class MethodOverloading {
 	}
 	
 	//ambuigity
-	
+	//amb
 	public static void area(double x, int y ) {
 		System.out.println("Value of x is "+ x);
 		System.out.println("Value of y is "+ y);
